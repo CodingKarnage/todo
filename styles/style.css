@@ -1,0 +1,135 @@
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+    background-color: #141414;
+    color: #fff;
+}
+
+.wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.logo h1 {
+    background-color: #565656;
+    color: #fba92c;
+}
+
+.logo {
+    background-color: #565656;
+    border-bottom: 4px solid black;
+    padding: 25px;
+    width: 100%;
+}
+
+.title {
+    background-color: #fba92c;
+    color: #141414;
+    padding: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.content .wrapper{
+    border: 2px solid #fba92c;
+    border-radius: 20px;
+    margin-top: 15px;
+    padding: 15px;
+}
+form {
+    /* border: 1px dashed blue; */
+    padding: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.task-text {
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #fba92c;
+    padding: 10px;
+    background-color: #fba92c;
+}
+
+.task-text:focus {
+    border-color: #565656;
+    /* background-color: #fba92c; */
+    color: #141414;
+}
+
+.add-btn {
+    width: 10%;
+    height: 38px;
+    border-radius: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-color: #fba92c;
+}
+
+.add-btn:hover {
+    background-color: #fba92c;
+    color: #141414;
+    border-color: #565656;
+}
+
+.task-list {
+    list-style-type: none;
+}
+
+.task-item{
+    border-color: #fba92c;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-style: solid;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: #565656;
+}
+
+/* .task-item:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+} */
+.item-text {
+    flex: 1;
+    background-color: #565656;
+}
+.delete, .check {
+    padding: 3px;
+    width: 30px;
+    background-color: red;
+    border: 2px solid #fba92c;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+}
+
+.delete:hover {
+    background-color: #565656;
+    color: red;
+}
+
+.check {
+    background-color: green;
+}
+
+.check:hover {
+    background-color: #565656;
+    color: green;
+}
